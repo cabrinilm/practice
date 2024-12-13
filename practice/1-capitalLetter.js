@@ -6,14 +6,18 @@
 
 
 function makeCapitalLetters(phrase){
-  const newWord = phrase.slice(0,1).toUpperCase()
-  console.log(newWord + phrase.slice(1))
-    return newWord + phrase.slice(1)
+    
+const newArr = phrase.split(' ').map(word => {
+   return   word[0].toUpperCase() + word.slice(1)
+    
+})
+
+return   newArr.join(' ')
 
 }
 
 
-console.log(makeCapitalLetters('olaolaola'), '<---')
+console.log(makeCapitalLetters('hey luca how are you'), '<---')
 
 
 
