@@ -6,7 +6,8 @@
 
 
 function makeCapitalLetters(phrase){
-    
+
+
 const newArr = phrase.split(' ').map(word => {
    return   word[0].toUpperCase() + word.slice(1)
     
@@ -17,7 +18,6 @@ return   newArr.join(' ')
 }
 
 
-console.log(makeCapitalLetters('hey luca how are you'), '<---')
 
 
 
